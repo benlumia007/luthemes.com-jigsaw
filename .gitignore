@@ -3,3 +3,6 @@ build_production
 node_modules
 public/assets/scripts
 vendor
+
+composer.lock
+package-lock.json
