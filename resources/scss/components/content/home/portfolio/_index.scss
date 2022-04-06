@@ -1,0 +1,47 @@
+.site-portfolio {
+    background: color( white );
+    padding: 2.25rem;
+
+    .content-area {
+        margin: 0 auto;
+        max-width: 1170px;
+
+        .portfolio {
+            .entry-header {
+                text-align: center;
+
+                .entry-title {
+                    font-size: 3rem;
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+
+            .entry-content {
+                margin: 2.25rem 0;
+
+                ul {
+                    display: grid;
+                    grid-template-columns: 1fr 1fr 1fr;
+                    grid-gap: 1.125rem;
+                    list-style-type: none;
+                    margin: 0;
+                    padding: 0;
+
+                    li {
+                        .caption {
+                            background: color( silver );
+                            padding: 0.5rem;
+                            text-align: center;
+
+                            .caption-title {
+                                margin: 0;
+                                padding: 0;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

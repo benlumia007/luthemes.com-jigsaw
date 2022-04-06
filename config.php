@@ -31,7 +31,7 @@ return [
         'portfolios' => [
             'extends' => '_views.portfolio',
             'path' => 'portfolio/{-title}',
-            'sort' => '-date',
+            'sort' => '-filename',
         ],
     ],
 ];
