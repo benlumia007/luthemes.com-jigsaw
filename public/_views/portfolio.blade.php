@@ -5,9 +5,6 @@
     <div class="right-sidebar">
         <main class="content-area">
             <article class="page">
-                <header class="entry-header">
-                    <h1 class="entry-title">{{ $page->title }}</a></h1>
-                </header>
                 <div class="entry-content">
                     @yield( 'content' )
                 </div>
@@ -18,7 +15,11 @@
                 <h2 class="widget-title">Theme Details</h2>
                 <table>
                     <tbody>
-                        <tr>
+                    <tr>
+                        <th>Name</th>
+                        <td><?= $page->title; ?></td>
+                    </tr>
+                    <tr>
                             <th>Type</th>
                             <td><?= ucwords( str_replace( '-', ' ', $page->type ) ); ?></td>
                         </tr>

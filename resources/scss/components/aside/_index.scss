@@ -9,6 +9,7 @@
     .widget {
         background: color( white );
         border: 0.063rem solid #cccccc;
+        font-size: 0.875rem;
         margin-top: 0;
         margin-bottom: 1.125rem;
         padding: 1.125rem;
@@ -34,10 +35,12 @@
                 color: #ffffff;
                 padding: 0.5rem;
                 text-align: left;
+                width: 35%;
             }
 
             td {
                 padding: 0.5rem;
+                width: 65%;
             }
         }
 
