@@ -9,7 +9,7 @@ return [
     'siteTitle' => 'Benjamin Lu',
 
     // A custom tagline for the theme.
-    'siteTagline' => 'Benjamin Lu',
+    'siteTagline' => 'Full Stack Developer',
 
     // A custom primary menu for the site.
     'primaryMenu' => [

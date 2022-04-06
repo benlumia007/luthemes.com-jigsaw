@@ -21,15 +21,15 @@
 </head>
 <body>
     <section id="container" class="site-container">
-        <header id="masthead" class="site-header">
-            <nav id="primary" class="menu-primary">
-                <button class="menu-toggle"><?= e( 'Menu' ); ?></button>
-                <ul class="menu-items">
-                    @foreach ( $page->primaryMenu as $menu )
-                        <li class="menu-item"><a class="{{ $page->selected( str_replace( '/','', $menu->link ) ) }}" href="{{ $menu->link }}">{{ $menu->title }}</a></li>
-                    @endforeach
-                </ul>
-            </nav>
+        <nav id="primary" class="menu-primary">
+            <button class="menu-toggle"><?= e( 'Menu' ); ?></button>
+            <ul class="menu-items">
+                @foreach ( $page->primaryMenu as $menu )
+                    <li class="menu-item"><a class="{{ $page->selected( str_replace( '/','', $menu->link ) ) }}" href="{{ $menu->link }}">{{ $menu->title }}</a></li>
+                @endforeach
+            </ul>
+        </nav>
+        <header id="masthead" class="site-header header-image">
             <div class="site-branding">
                 <h1 class="site-title"><a href="/">{{ $page->siteTitle }}</a></h1>
                 <span class="site-description">{{ $page->siteTagline }}</span>
