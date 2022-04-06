@@ -5,6 +5,9 @@ return [
         'source' => 'public',
     ],
 
+    // base uri
+    'baseUrl' => 'https://luthemes.test',
+
     // A custom title for the theme.
     'siteTitle' => 'Benjamin Lu',
 
@@ -20,6 +23,15 @@ return [
         [
             'link'  => '/archives',
             'title' => 'Archives'
+        ],
+    ],
+
+    // a custom collections for the theme.
+    'collections' => [
+        'portfolios' => [
+            'extends' => '_views.portfolio',
+            'path' => 'portfolio/{-title}',
+            'sort' => '-date',
         ],
     ],
 ];
