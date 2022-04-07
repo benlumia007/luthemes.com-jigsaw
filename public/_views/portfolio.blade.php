@@ -58,5 +58,20 @@
             </div>
         </aside>
     </div>
+    <section class="recent-portfolio">
+                <ul>
+                    <?php foreach ( $portfolios->shuffle()->take( 3 ) as $portfolio ) : ?>
+                        <li>
+                            <figure class="post-thumbnail">
+                                <img src="{{ $portfolio->thumbnail }}" />
+                            </figure>
+                            <div class="caption">
+                                <h3 class="caption-title"><a href="{{ $portfolio->getUrl() }}">{{ $portfolio->title }}</a></h3>
+                                <span class="caption-description">{{ $portfolio->caption }}</span>
+                            </div>
+                        </li>
+                    <?php endforeach ?>
+                </ul>
+            </section>
 </section>
 @endsection

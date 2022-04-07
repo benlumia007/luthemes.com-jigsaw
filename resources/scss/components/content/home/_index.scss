@@ -1,1 +1,19 @@
 @import 'portfolio/index';
+
+.recent-portfolio {
+    background: color( white );
+    border: 0.063rem solid #cccccc;
+    clear: both;
+    content: "";
+    display: table;
+    padding: 1.125rem;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 1.125rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+    }
+} 
