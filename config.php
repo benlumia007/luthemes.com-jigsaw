@@ -5,8 +5,9 @@ return [
         'source' => 'public',
     ],
 
-    // base uri
+    // base url
     'baseUrl' => 'https://luthemes.test',
+    'production' => false,
 
     // A custom title for the theme.
     'siteTitle' => 'Benjamin Lu',
