@@ -19,7 +19,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@400;700&family=Merriweather:wght@400;700&family=Tangerine&display=swap" rel="stylesheet">
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
 </head>
-<body>
+<body onmousedown="return false">
     <section id="container" class="site-container">
         <nav id="primary" class="menu-primary">
             <button class="menu-toggle"><?= e( 'Menu' ); ?></button>
@@ -44,5 +44,10 @@
         </footer>
     </section>
     <script rel="javascript" src="{{ mix( 'js/app.js', 'assets/scripts' ) }}"></script>
+    <script>
+        document.addEventListener( "contextmenu", function( event ) {
+            event.preventDefault();   
+        }, false );
+    </script>
 </body>
 </html>
