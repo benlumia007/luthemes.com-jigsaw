@@ -38,6 +38,7 @@
         @yield( 'body' )
         <footer id="footer" class="site-footer">
             <div class="site-info">
+                Copyright (C) 2014-2022 Benjamin Lu. <br />
                 Powered by <a href="https://jigsaw.tighten.com" target="_blank">Jigsaw</a> and heart
             </div>
         </footer>
