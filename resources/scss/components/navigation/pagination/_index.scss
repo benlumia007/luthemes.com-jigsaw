@@ -1,0 +1,25 @@
+.pagination-items {
+    font-size: 1.125rem;
+    text-align: center;
+
+    .previous {
+        padding: 0.5rem 1rem;
+    }
+
+    .text-blue-600 {
+        color: color( black );
+        cursor: default;
+        font-weight: bold;
+        padding: 0.5rem 1rem;
+        pointer-events: none;
+        text-decoration: none;
+    }
+
+    .text-blue-700 {
+        padding: 0.5rem 1rem;
+    }
+
+    .next {
+        padding: 0.5rem 1rem;
+    }
+}

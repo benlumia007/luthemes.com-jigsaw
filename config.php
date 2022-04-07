@@ -22,8 +22,8 @@ return [
             'title' => 'About'
         ],
         [
-            'link'  => '/archives',
-            'title' => 'Archives'
+            'link'  => '/portfolio',
+            'title' => 'Portfolio'
         ],
     ],
 
