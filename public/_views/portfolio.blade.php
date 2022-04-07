@@ -4,7 +4,7 @@
 <section id="content" class="site-content">
     <div class="right-sidebar">
         <main class="content-area">
-            <article class="page">
+            <article class="portfolio">
                 <div class="entry-content">
                     @yield( 'content' )
                 </div>
@@ -59,19 +59,19 @@
         </aside>
     </div>
     <section class="recent-portfolio">
-                <ul>
-                    <?php foreach ( $portfolios->shuffle()->take( 3 ) as $portfolio ) : ?>
-                        <li>
-                            <figure class="post-thumbnail">
-                                <img src="{{ $portfolio->thumbnail }}" />
-                            </figure>
-                            <div class="caption">
-                                <h3 class="caption-title"><a href="{{ $portfolio->getUrl() }}">{{ $portfolio->title }}</a></h3>
-                                <span class="caption-description">{{ $portfolio->caption }}</span>
-                            </div>
-                        </li>
-                    <?php endforeach ?>
-                </ul>
-            </section>
+        <ul>
+            <?php foreach ( $portfolios->filter( fn( $portfolio ) => $portfolio->title !== $page->title )->shuffle()->take( 3 ) as $portfolio ) : ?>
+                <li>
+                    <figure class="post-thumbnail">
+                        <img src="{{ $portfolio->thumbnail }}" />
+                    </figure>
+                    <div class="caption">
+                        <h3 class="caption-title"><a href="{{ $portfolio->getUrl() }}">{{ $portfolio->title }}</a></h3>
+                        <span class="caption-description">{{ $portfolio->caption }}</span>
+                    </div>
+                </li>
+            <?php endforeach ?>
+        </ul>
+    </section>
 </section>
 @endsection

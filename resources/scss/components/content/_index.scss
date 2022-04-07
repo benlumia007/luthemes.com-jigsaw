@@ -1,20 +1,2 @@
 @import 'home/index';
-
-.content-area {
-    line-height: 1.8rem;
-    
-    .page {
-        background: color( white );
-        border: 0.063rem solid #cccccc;
-        padding: 1.125rem;
-
-        .entry-header {
-            text-align: center;
-
-            .entry-title {
-                margin: 0;
-                padding: 0;
-            }
-        }
-    }
-}
+@import 'portfolio/index';

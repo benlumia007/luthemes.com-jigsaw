@@ -1,0 +1,49 @@
+.content-area {
+    line-height: 1.8rem;
+    
+    .portfolio {
+        background: color( white );
+        border: 0.063rem solid #cccccc;
+        padding: 1.125rem;
+
+        .entry-header {
+            text-align: center;
+
+            .entry-title {
+                margin: 0;
+                padding: 0;
+            }
+        }
+    }
+}
+
+.recent-portfolio {
+    background: color( white );
+    border: 0.063rem solid #cccccc;
+    clear: both;
+    content: "";
+    display: table;
+    padding: 1.125rem;
+
+    ul {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr; 
+        grid-gap: 1.125rem;
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+
+        li {
+            .caption {
+                background: color( silver );
+                padding: 0.5rem;
+                text-align: center;
+
+                .caption-title {
+                    margin: 0;
+                    padding: 0;
+                }
+            }
+        }
+    }
+} 
