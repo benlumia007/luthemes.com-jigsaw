@@ -29,10 +29,15 @@ return [
 
     // a custom collections for the theme.
     'collections' => [
-        'portfolios' => [
+        'posts'   => [
+            'extends' => '_views.single',
+            'path'    => 'blog/{-title}',
+            'sort'    => '-date'
+        ],
+        'portfolios'  => [
             'extends' => '_views.portfolio',
-            'path' => 'portfolio/{-title}',
-            'sort' => '-filename',
+            'path'    => 'portfolio/{-title}',
+            'sort'    => '-filename',
         ],
     ],
 ];
